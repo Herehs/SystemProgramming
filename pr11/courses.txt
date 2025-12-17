@@ -1,0 +1,10 @@
+C_Programming Basics
+Algorithms Introduction
+Operating_Systems Theory
+Databases SQL
+Computer_Networks Basics
+System_Programming Locks
+Cybersecurity Intro
+Linux Administration
+Software_Engineering
+Web_Development
