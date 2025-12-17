@@ -33,7 +33,6 @@ int main() {
     Course c;
     int i = 0;
 
-    /* Запрет чтения с 1 по 5 записи */
     lock_records(fd, F_RDLCK, 0, 5);
 
     printf("После запрета чтения 1–5 записей:\n");
@@ -42,7 +41,6 @@ int main() {
         printf("%s %s\n", c.name, c.desc);
     }
 
-    /* Разрешить чтение со 2 по 7 записи */
     lock_records(fd, F_UNLCK, 1, 6);
 
     printf("\nПосле разрешения чтения 2–7 записей:\n");
@@ -51,7 +49,6 @@ int main() {
         printf("%s %s\n", c.name, c.desc);
     }
 
-    /* Подсчёт доступных записей */
     int available = 0;
     struct flock test;
 
